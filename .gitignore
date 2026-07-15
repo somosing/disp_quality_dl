@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+outputs/
+runs/
+smoke_data/
+*.pth
+*.pt
+.DS_Store
