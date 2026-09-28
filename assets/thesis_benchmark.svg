@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640">
+<rect width="1000" height="640" fill="#0d1117"/>
+<text x="55" y="55" fill="#f0f6fc" font-family="Arial" font-size="28" font-weight="700">Thesis benchmark context</text>
+<text x="55" y="84" fill="#8b949e" font-family="Arial" font-size="16">Final thesis model · not a reproduced benchmark of this compact public code snapshot</text>
+<g font-family="Arial">
+<text x="55" y="145" fill="#c9d1d9" font-size="18">Pixel-level reference-bad-pixel ranking</text>
+<rect x="55" y="175" width="760" height="34" rx="5" fill="#21262d"/><rect x="55" y="175" width="651" height="34" rx="5" fill="#8b949e"/><text x="830" y="199" fill="#c9d1d9" font-size="17">Sensor AUROC 0.768</text>
+<rect x="55" y="225" width="760" height="34" rx="5" fill="#21262d"/><rect x="55" y="225" width="684" height="34" rx="5" fill="#58a6ff"/><text x="830" y="249" fill="#c9d1d9" font-size="17">Classical 0.801</text>
+<rect x="55" y="275" width="760" height="34" rx="5" fill="#21262d"/><rect x="55" y="275" width="732" height="34" rx="5" fill="#3fb950"/><text x="830" y="299" fill="#c9d1d9" font-size="17">Learned 0.856</text>
+
+<text x="55" y="375" fill="#c9d1d9" font-size="18">Learned reliability summary</text>
+<rect x="55" y="410" width="265" height="120" rx="12" fill="#161b22" stroke="#3fb950"/><text x="187" y="453" text-anchor="middle" fill="#f0f6fc" font-size="30" font-weight="700">0.724</text><text x="187" y="490" text-anchor="middle" fill="#c9d1d9" font-size="17">AUPRC</text>
+<rect x="365" y="410" width="265" height="120" rx="12" fill="#161b22" stroke="#a371f7"/><text x="497" y="453" text-anchor="middle" fill="#f0f6fc" font-size="30" font-weight="700">−0.926</text><text x="497" y="490" text-anchor="middle" fill="#c9d1d9" font-size="17">ROI Spearman</text>
+<rect x="675" y="410" width="265" height="120" rx="12" fill="#161b22" stroke="#d29922"/><text x="807" y="453" text-anchor="middle" fill="#f0f6fc" font-size="30" font-weight="700">0.074</text><text x="807" y="485" text-anchor="middle" fill="#c9d1d9" font-size="17">bad-pixel ratio</text><text x="807" y="507" text-anchor="middle" fill="#8b949e" font-size="14">@ 20% coverage</text>
+<text x="55" y="590" fill="#8b949e" font-size="15">Evaluation set: 1,158 held-out warehouse captures. Metrics measure ranking/filtering, not calibrated probabilities.</text>
+</g></svg>

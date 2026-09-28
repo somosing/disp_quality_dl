@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+<rect width="1200" height="500" fill="#0d1117"/>
+<text x="55" y="55" fill="#f0f6fc" font-family="Arial" font-size="30" font-weight="700">Public learning-based reliability pipeline</text>
+<g font-family="Arial">
+<rect x="55" y="115" rx="14" width="230" height="155" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+<text x="170" y="150" text-anchor="middle" fill="#f0f6fc" font-size="19" font-weight="700">3-channel input</text>
+<text x="85" y="185" fill="#c9d1d9" font-size="17">• sensor disparity</text><text x="85" y="215" fill="#c9d1d9" font-size="17">• valid mask</text><text x="85" y="245" fill="#c9d1d9" font-size="17">• grayscale intensity</text>
+
+<rect x="365" y="115" rx="14" width="250" height="155" fill="#161b22" stroke="#a371f7" stroke-width="2"/>
+<text x="490" y="158" text-anchor="middle" fill="#f0f6fc" font-size="20" font-weight="700">Lightweight U-Net</text>
+<text x="490" y="195" text-anchor="middle" fill="#c9d1d9" font-size="17">3 downsampling stages</text><text x="490" y="225" text-anchor="middle" fill="#c9d1d9" font-size="17">skip connections · base 32</text>
+
+<rect x="695" y="115" rx="14" width="210" height="155" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+<text x="800" y="160" text-anchor="middle" fill="#f0f6fc" font-size="20" font-weight="700">Reliability map</text><text x="800" y="198" text-anchor="middle" fill="#c9d1d9" font-size="17">sigmoid output</text><text x="800" y="228" text-anchor="middle" fill="#c9d1d9" font-size="17">R(x) ∈ [0,1]</text>
+
+<rect x="985" y="115" rx="14" width="165" height="155" fill="#161b22" stroke="#d29922" stroke-width="2"/>
+<text x="1068" y="160" text-anchor="middle" fill="#f0f6fc" font-size="20" font-weight="700">ROI pooling</text><text x="1068" y="198" text-anchor="middle" fill="#c9d1d9" font-size="17">mean R(x)</text><text x="1068" y="228" text-anchor="middle" fill="#c9d1d9" font-size="17">scene score</text>
+
+<path d="M285 192 H355" stroke="#8b949e" stroke-width="3" marker-end="url(#a)"/><path d="M615 192 H685" stroke="#8b949e" stroke-width="3" marker-end="url(#a)"/><path d="M905 192 H975" stroke="#8b949e" stroke-width="3" marker-end="url(#a)"/>
+<text x="55" y="355" fill="#f0f6fc" font-size="18" font-weight="700">Training only</text>
+<text x="55" y="390" fill="#c9d1d9" font-size="17">Aligned teacher/reference disparity → soft reliability target map</text>
+<text x="55" y="438" fill="#8b949e" font-size="16">The checked-in public implementation is smaller than the final six-channel, multi-head thesis model.</text>
+</g>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8b949e"/></marker></defs>
+</svg>
